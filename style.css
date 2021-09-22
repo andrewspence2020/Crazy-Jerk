@@ -628,7 +628,7 @@ body {
 .contact-us-address,
 .working-hours {
   margin-top: 5rem;
-  margin-left: 8rem;
+  text-align: center;
 }
 .contact-us h2 {
   font-size: 3rem;
