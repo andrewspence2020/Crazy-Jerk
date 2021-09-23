@@ -664,7 +664,7 @@ footer {
 /* ***************************************** */
 .about-us-section {
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url('img/patio-dining-4.jpg');
+    url('img/patio-dining-5.png');
   background-repeat: no-repeat;
   background-position: center;
   height: 100vh;
@@ -683,7 +683,7 @@ footer {
   color: #fff;
 }
 .about-us-img img {
-  height: auto;
+  height: 45rem;
   max-width: 100%;
   border-radius: 0.7rem;
 }
