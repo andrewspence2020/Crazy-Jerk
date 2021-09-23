@@ -658,3 +658,42 @@ footer {
   text-align: center;
   font-size: 2rem;
 }
+/* ---------------------------------------------------------------------- */
+/* ***************************************** */
+/*             About-us */
+/* ***************************************** */
+.about-us-section {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url('img/patio-dining-4.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+}
+.about-us-header {
+  font-size: 6rem;
+  text-align: center;
+  padding-bottom: 4rem;
+}
+.about-us-header span {
+  color: red;
+}
+.about-us-header span:last-child {
+  color: #fff;
+}
+.about-us-img img {
+  height: auto;
+  max-width: 100%;
+  border-radius: 0.7rem;
+}
+.about-us-paragraph p {
+  font-size: 2rem;
+  padding-bottom: 3rem;
+  color: #fff;
+}
+.about-us-paragraph img {
+  height: auto;
+  max-width: 100%;
+  border-radius: 0.7rem;
+}
