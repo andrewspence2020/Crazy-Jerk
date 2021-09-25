@@ -662,6 +662,9 @@ footer {
 /* ***************************************** */
 /*             About-us */
 /* ***************************************** */
+.about-us-body {
+  font-family: 'Permanent Marker', cursive;
+}
 .about-us-section {
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url('img/patio-dining-5.png');
@@ -696,4 +699,7 @@ footer {
   height: auto;
   max-width: 100%;
   border-radius: 0.7rem;
+}
+.about-us-paragraph span {
+  color: red;
 }
