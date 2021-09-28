@@ -621,6 +621,9 @@ body {
   font-size: 6rem;
   padding-top: 5rem;
 }
+.contact-us-header span {
+  color: red;
+}
 .contact-us {
   height: 40rem;
   width: 100%;
