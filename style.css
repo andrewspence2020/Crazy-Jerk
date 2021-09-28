@@ -402,8 +402,8 @@ body {
   text-align: center;
 }
 .carousel-cell img {
-  border-radius: 2rem;
-  width: 100%;
+  border-radius: 1.5rem;
+  width: 70%;
   height: auto;
 }
 
