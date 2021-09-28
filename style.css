@@ -149,6 +149,27 @@ body {
   list-style: none;
   cursor: pointer;
 }
+.main-nav-link {
+  display: inline-block;
+  position: relative;
+  color: goldenrod;
+}
+.main-nav-link:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: red;
+  transform-origin: center;
+  transition: transform 0.25s ease-out;
+}
+.main-nav-link:hover:after {
+  transform: scaleX(1);
+  transform-origin: center;
+}
 
 .main-nav-link:link,
 .main-nav-link:visited {
@@ -178,8 +199,8 @@ body {
 .main-nav-link.nav-cta:after {
   top: 0.5rem;
   bottom: 0.5rem;
-  border: 0.1rem solid black;
 }
+
 /* ******************************************** */
 /* Main Header */
 /* ******************************************** */
