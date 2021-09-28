@@ -703,3 +703,7 @@ footer {
 .about-us-paragraph span {
   color: red;
 }
+.about-us-back-homescreen-btn {
+  margin-top: 5rem;
+  text-align: center;
+}
