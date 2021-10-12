@@ -369,7 +369,7 @@ body {
   margin-top: 3rem;
   margin-bottom: 4rem;
 }
-.secondary-menu-img img {
+.hover .secondary-menu-img img {
   margin-bottom: 10rem;
 }
 /* ***************************************** */
@@ -427,6 +427,9 @@ body {
   width: 70%;
   height: auto;
 }
+.carousel-cell p {
+  font-size: 30rem;
+}
 
 .flickity-viewport {
   height: 570px;
@@ -440,6 +443,7 @@ body {
 .carousel-header span {
   color: red;
 }
+
 /* ***************************************** */
 /*              Form */
 /* ***************************************** */
