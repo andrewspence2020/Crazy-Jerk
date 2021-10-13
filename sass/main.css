@@ -1,12 +1,12 @@
 /*------------- COLORS
-- Primary - red 
+- Primary - $color-primary 
 - Tints #ffffe6
 - Shades - #FFFFEC
 - seconday color  - #FFD700 
 - thirdary color - #000000
 */
 /*-------------linear gradient */
-/* linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) */
+/* linear-gradient(rgba($color-thirdary, 0.5), rgba($color-thirdary, 0.5) */
 /* BASIC SET-UP */
 * {
   -webkit-box-sizing: border-box;
@@ -70,7 +70,7 @@ body {
 }
 
 .section-hero {
-  background-color: #ffffe9;
+  background-color: #fcfcfc;
   padding: 9.6rem 0;
 }
 
@@ -88,7 +88,7 @@ body {
   font-size: 3rem;
   font-weight: 700;
   line-height: 1.05;
-  color: black;
+  color: #000000;
   letter-spacing: -0.5px;
   margin-bottom: 3.2rem;
 }
@@ -100,16 +100,16 @@ body {
 }
 
 .hero-description span {
-  color: #ffd700;
+  color: #ff0025;
 }
 
 .btn:link,
 .btn:visited {
   display: inline-block;
-  background-color: red;
+  background-color: #ff0025;
   font-size: 2rem;
   text-decoration: none;
-  color: #ffffe6;
+  color: #fcfcfc;
   padding: 1.6rem 2.6rem;
   border-radius: 12px;
   -webkit-transition: all 0.6s;
@@ -122,14 +122,14 @@ body {
 
 .btn--full:link,
 .btn--full:visited {
-  background-color: red;
-  color: #fff;
+  background-color: #ff0025;
+  color: #fcfcfc;
 }
 
 .btn--full:hover,
 .btn--full:active {
-  background-color: gold;
-  color: black;
+  background-color: #ffd700;
+  color: #000000;
 }
 
 .margin-right-sm {
@@ -138,14 +138,14 @@ body {
 
 .btn--outline:link,
 .btn--outline:visited {
-  background-color: white;
-  color: black;
+  background-color: #fcfcfc;
+  color: #000000;
 }
 
 .btn--outline:hover,
 .btn--outline:active {
-  background-color: yellow;
-  /* border: 3px solid #fff; */
+  background-color: #ffd700;
+  /* border: 3px solid $color-fifthdary; */
   /* Trick to add border inside */
   /* box-shadow: 0 0 0 3px; */
 }
@@ -155,7 +155,7 @@ body {
 /* ***************************************** */
 .logo {
   margin-top: 1rem;
-  background-color: #fff;
+  background-color: #fcfcfc;
   height: 8rem;
   border-radius: 6rem;
 }
@@ -179,7 +179,7 @@ body {
 .main-nav-link {
   display: inline-block;
   position: relative;
-  color: goldenrod;
+  color: #daa520;
 }
 
 .main-nav-link:after {
@@ -191,7 +191,7 @@ body {
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: red;
+  background-color: #ff0025;
   -webkit-transform-origin: center;
           transform-origin: center;
   -webkit-transition: -webkit-transform 0.25s ease-out;
@@ -210,7 +210,7 @@ body {
 .main-nav-link:link,
 .main-nav-link:visited {
   text-decoration: none;
-  color: white;
+  color: #fcfcfc;
   font-weight: 800;
   font-size: 2.5rem;
   -webkit-transition: all 0.3s;
@@ -220,20 +220,20 @@ body {
 
 .main-nav-link:hover,
 .main-nav-link:active {
-  color: gold;
+  color: #ffd700;
 }
 
 .main-nav-link.nav-cta:link,
 .main-nav-link.nav-cta:visited {
   border-radius: 0.9rem;
   padding: 1.6rem 2.4rem;
-  color: white;
-  background-color: green;
+  color: #fcfcfc;
+  background-color: #4a7023;
 }
 
 .main-nav-link.nav-cta:hover,
 .main-nav-link.nav-cta:active {
-  background-color: goldenrod;
+  background-color: #daa520;
 }
 
 .main-nav-link.nav-cta:after {
@@ -245,8 +245,8 @@ body {
 /* Main Header */
 /* ******************************************** */
 .main-hero {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("img/main-hero-image.webp");
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("img/main-hero-image.webp");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../img/main-hero-image.webp");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/main-hero-image.webp");
   background-repeat: no-repeat;
   background-position: center;
   height: auto;
@@ -273,7 +273,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: #fff;
+  color: #fcfcfc;
 }
 
 .sub-hero-description {
@@ -283,7 +283,7 @@ body {
   font-size: 30px;
   line-height: 1px;
   letter-spacing: 0.3rem;
-  color: #fff;
+  color: #fcfcfc;
 }
 
 .main-hero-description {
@@ -292,7 +292,7 @@ body {
 }
 
 .main-hero-description span {
-  color: red;
+  color: #ff0025;
   display: inline-block;
 }
 
@@ -311,7 +311,7 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   margin-top: 5rem;
-  color: #fff;
+  color: #fcfcfc;
 }
 
 /* ***************************************** */
@@ -342,7 +342,7 @@ body {
   width: 4.8rem;
   border-radius: 50%;
   margin-right: -1.6rem;
-  border: 3px solid white;
+  border: 3px solid #fcfcfc;
 }
 
 .delivered-imgs img:last-child {
@@ -355,7 +355,7 @@ body {
 }
 
 .delivered-text span {
-  color: red;
+  color: #ff0025;
 }
 
 /* ***************************************** */
@@ -369,7 +369,7 @@ body {
 }
 
 .specials-description-header span {
-  color: red;
+  color: #ff0025;
 }
 
 .specials-description-section {
@@ -412,7 +412,7 @@ body {
 }
 
 .menu-header span {
-  color: red;
+  color: #ff0025;
 }
 
 .menu-section {
@@ -448,8 +448,8 @@ body {
 /* Patio Description */
 /* ***************************************** */
 .main-patio-description {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url("img/patio-dining-4.jpg");
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("img/patio-dining-4.jpg");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url("../img/patio-dining-2.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/patio-dining-2.jpg");
   background-position: right 20% bottom 60%;
   background-repeat: no-repeat;
   width: 100%;
@@ -466,11 +466,11 @@ body {
 }
 
 .patio-header span {
-  color: red;
+  color: #ff0025;
 }
 
 .patio-header span:last-child {
-  color: white;
+  color: #fcfcfc;
 }
 
 .patio-img img {
@@ -481,7 +481,7 @@ body {
 }
 
 .patio-description p {
-  color: #fff;
+  color: #fcfcfc;
   font-size: 2rem;
   padding-bottom: 2rem;
 }
@@ -524,15 +524,15 @@ body {
 }
 
 .carousel-header span {
-  color: red;
+  color: #ff0025;
 }
 
 /* ***************************************** */
 /*              Form */
 /* ***************************************** */
 .form {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url("img/patio-dining-3.jpg");
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("img/patio-dining-3.jpg");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url("../img/patio-dining-4.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/patio-dining-4.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -546,7 +546,7 @@ body {
   font-size: 3rem;
   margin-left: 20rem;
   padding-top: 4rem;
-  color: #fff;
+  color: #fcfcfc;
 }
 
 .email-box {
@@ -558,7 +558,7 @@ body {
 }
 
 .email-box span {
-  color: red;
+  color: #ff0025;
 }
 
 .form .email-box {
@@ -575,7 +575,7 @@ body {
 .email-box h2 {
   margin: 0 0 30px;
   padding: 0;
-  color: #fff;
+  color: #fcfcfc;
   text-align: center;
 }
 
@@ -587,10 +587,10 @@ body {
   width: 100%;
   padding: 10px 0;
   font-size: 16px;
-  color: #fff;
+  color: #fcfcfc;
   margin-bottom: 30px;
   border: none;
-  border-bottom: 1px solid #fff;
+  border-bottom: 1px solid #fcfcfc;
   outline: none;
   background: transparent;
 }
@@ -601,7 +601,7 @@ body {
   left: 0;
   padding: 10px 0;
   font-size: 16px;
-  color: #fff;
+  color: #fcfcfc;
   pointer-events: none;
   -webkit-transition: 0.5s;
   transition: 0.5s;
@@ -611,7 +611,7 @@ body {
 .email-box .user-box input:valid ~ label {
   top: -20px;
   left: 0;
-  color: #dcf403;
+  color: #ffd700;
   font-size: 12px;
 }
 
@@ -623,7 +623,7 @@ body {
   position: relative;
   display: inline-block;
   padding: 10px 20px;
-  color: goldenrod;
+  color: #daa520;
   font-size: 16px;
   text-decoration: none;
   text-transform: uppercase;
@@ -637,11 +637,11 @@ body {
 }
 
 .submit-button:hover {
-  background: goldenrod;
-  color: #fff;
+  background: #daa520;
+  color: #fcfcfc;
   border-radius: 5px;
-  -webkit-box-shadow: 0 0 5px goldenrod, 0 0 25px goldenrod, 0 0 50px goldenrod, 0 0 100px goldenrod;
-          box-shadow: 0 0 5px goldenrod, 0 0 25px goldenrod, 0 0 50px goldenrod, 0 0 100px goldenrod;
+  -webkit-box-shadow: 0 0 5px #daa520, 0 0 25px #daa520, 0 0 50px #daa520, 0 0 100px #daa520;
+          box-shadow: 0 0 5px #daa520, 0 0 25px #daa520, 0 0 50px #daa520, 0 0 100px #daa520;
 }
 
 .submit-button span {
@@ -654,8 +654,8 @@ body {
   left: -100%;
   width: 100%;
   height: 2px;
-  background: -webkit-gradient(linear, left top, right top, from(transparent), to(goldenrod));
-  background: linear-gradient(90deg, transparent, goldenrod);
+  background: -webkit-gradient(linear, left top, right top, from(transparent), to(#daa520));
+  background: linear-gradient(90deg, transparent, #daa520);
   -webkit-animation: btn-anim1 1s linear infinite;
           animation: btn-anim1 1s linear infinite;
 }
@@ -685,8 +685,8 @@ body {
   right: 0;
   width: 2px;
   height: 100%;
-  background: -webkit-gradient(linear, left top, left bottom, from(transparent), to(goldenrod));
-  background: linear-gradient(180deg, transparent, goldenrod);
+  background: -webkit-gradient(linear, left top, left bottom, from(transparent), to(#daa520));
+  background: linear-gradient(180deg, transparent, #daa520);
   -webkit-animation: btn-anim2 1s linear infinite;
           animation: btn-anim2 1s linear infinite;
   -webkit-animation-delay: 0.25s;
@@ -718,8 +718,8 @@ body {
   right: -100%;
   width: 100%;
   height: 2px;
-  background: -webkit-gradient(linear, right top, left top, from(transparent), to(goldenrod));
-  background: linear-gradient(270deg, transparent, goldenrod);
+  background: -webkit-gradient(linear, right top, left top, from(transparent), to(#daa520));
+  background: linear-gradient(270deg, transparent, #daa520);
   -webkit-animation: btn-anim3 1s linear infinite;
           animation: btn-anim3 1s linear infinite;
   -webkit-animation-delay: 0.5s;
@@ -751,8 +751,8 @@ body {
   left: 0;
   width: 2px;
   height: 100%;
-  background: -webkit-gradient(linear, left bottom, left top, from(transparent), to(goldenrod));
-  background: linear-gradient(360deg, transparent, goldenrod);
+  background: -webkit-gradient(linear, left bottom, left top, from(transparent), to(#daa520));
+  background: linear-gradient(360deg, transparent, #daa520);
   -webkit-animation: btn-anim4 1s linear infinite;
           animation: btn-anim4 1s linear infinite;
   -webkit-animation-delay: 0.75s;
@@ -783,7 +783,7 @@ body {
 /*              contact-us */
 /* ***************************************** */
 .contact-us-section {
-  background-color: #ffffec;
+  background-color: #fcfcfc;
 }
 
 .contact-us-header {
@@ -793,7 +793,7 @@ body {
 }
 
 .contact-us-header span {
-  color: red;
+  color: #ff0025;
 }
 
 .contact-us {
@@ -831,7 +831,7 @@ body {
 /*             footer */
 /* ***************************************** */
 footer {
-  background-color: goldenrod;
+  background-color: #daa520;
   padding: 15px 0 15px 0;
 }
 
@@ -865,11 +865,11 @@ footer {
 }
 
 .about-us-header span {
-  color: red;
+  color: #ff0025;
 }
 
 .about-us-header span:last-child {
-  color: #fff;
+  color: #fcfcfc;
 }
 
 .about-us-img img {
@@ -881,7 +881,7 @@ footer {
 .about-us-paragraph p {
   font-size: 2rem;
   padding-bottom: 3rem;
-  color: #fff;
+  color: #fcfcfc;
 }
 
 .about-us-paragraph img {
@@ -891,7 +891,7 @@ footer {
 }
 
 .about-us-paragraph span {
-  color: red;
+  color: #ff0025;
 }
 
 .about-us-back-homescreen-btn {

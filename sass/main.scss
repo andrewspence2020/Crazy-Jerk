@@ -1,17 +1,21 @@
 /*------------- COLORS
-- Primary - red 
+- Primary - $color-primary 
 - Tints #ffffe6
 - Shades - #FFFFEC
 - seconday color  - #FFD700 
 - thirdary color - #000000
 */
 
-$color-primary: red;
+// Website Variables
+$color-primary: #ff0025;
 $color-secondary: #ffd700;
 $color-thirdary: #000000;
+$color-btn: #4a7023;
+$color-fourthdary: #daa520;
+$color-fifthdary: #fcfcfc;
 
 /*-------------linear gradient */
-/* linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) */
+/* linear-gradient(rgba($color-thirdary, 0.5), rgba($color-thirdary, 0.5) */
 
 /* BASIC SET-UP */
 * {
@@ -63,7 +67,7 @@ body {
   gap: 9.6rem;
 }
 .section-hero {
-  background-color: #ffffe9;
+  background-color: $color-fifthdary;
   padding: 9.6rem 0;
 }
 
@@ -80,7 +84,7 @@ body {
   font-size: 3rem;
   font-weight: 700;
   line-height: 1.05;
-  color: black;
+  color: $color-thirdary;
   letter-spacing: -0.5px;
   margin-bottom: 3.2rem;
 }
@@ -90,15 +94,15 @@ body {
   margin-bottom: 4.8rem;
 }
 .hero-description span {
-  color: red;
+  color: $color-primary;
 }
 .btn:link,
 .btn:visited {
   display: inline-block;
-  background-color: red;
+  background-color: $color-primary;
   font-size: 2rem;
   text-decoration: none;
-  color: #ffffe6;
+  color: $color-fifthdary;
   padding: 1.6rem 2.6rem;
   border-radius: 12px;
 
@@ -109,14 +113,14 @@ body {
 }
 .btn--full:link,
 .btn--full:visited {
-  background-color: red;
-  color: #fff;
+  background-color: $color-primary;
+  color: $color-fifthdary;
 }
 
 .btn--full:hover,
 .btn--full:active {
-  background-color: gold;
-  color: black;
+  background-color: $color-secondary;
+  color: $color-thirdary;
 }
 .margin-right-sm {
   margin-right: 7.6rem !important;
@@ -124,14 +128,14 @@ body {
 
 .btn--outline:link,
 .btn--outline:visited {
-  background-color: white;
-  color: black;
+  background-color: $color-fifthdary;
+  color: $color-thirdary;
 }
 
 .btn--outline:hover,
 .btn--outline:active {
-  background-color: yellow;
-  /* border: 3px solid #fff; */
+  background-color: $color-secondary;
+  /* border: 3px solid $color-fifthdary; */
   /* Trick to add border inside */
   /* box-shadow: 0 0 0 3px; */
 }
@@ -141,7 +145,7 @@ body {
 /* ***************************************** */
 .logo {
   margin-top: 1rem;
-  background-color: #fff;
+  background-color: $color-fifthdary;
   height: 8rem;
   border-radius: 6rem;
 }
@@ -159,7 +163,7 @@ body {
 .main-nav-link {
   display: inline-block;
   position: relative;
-  color: goldenrod;
+  color: $color-fourthdary;
 }
 .main-nav-link:after {
   content: '';
@@ -169,7 +173,7 @@ body {
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: red;
+  background-color: $color-primary;
   transform-origin: center;
   transition: transform 0.25s ease-out;
 }
@@ -181,7 +185,7 @@ body {
 .main-nav-link:link,
 .main-nav-link:visited {
   text-decoration: none;
-  color: white;
+  color: $color-fifthdary;
   font-weight: 800;
   font-size: 2.5rem;
   transition: all 0.3s;
@@ -189,18 +193,18 @@ body {
 }
 .main-nav-link:hover,
 .main-nav-link:active {
-  color: gold;
+  color: $color-secondary;
 }
 .main-nav-link.nav-cta:link,
 .main-nav-link.nav-cta:visited {
   border-radius: 0.9rem;
   padding: 1.6rem 2.4rem;
-  color: white;
-  background-color: green;
+  color: $color-fifthdary;
+  background-color: $color-btn;
 }
 .main-nav-link.nav-cta:hover,
 .main-nav-link.nav-cta:active {
-  background-color: goldenrod;
+  background-color: $color-fourthdary;
 }
 
 .main-nav-link.nav-cta:after {
@@ -213,8 +217,11 @@ body {
 /* ******************************************** */
 
 .main-hero {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url('img/main-hero-image.webp');
+  background-image: linear-gradient(
+      rgba($color-thirdary, 0.5),
+      rgba($color-thirdary, 0.5)
+    ),
+    url('../img/main-hero-image.webp');
   background-repeat: no-repeat;
   background-position: center;
   height: auto;
@@ -234,14 +241,14 @@ body {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  color: #fff;
+  color: $color-fifthdary;
 }
 .sub-hero-description {
   display: flex;
   font-size: 30px;
   line-height: 1px;
   letter-spacing: 0.3rem;
-  color: #fff;
+  color: $color-fifthdary;
 }
 .main-hero-description {
   font-size: 60px;
@@ -249,7 +256,7 @@ body {
 }
 
 .main-hero-description span {
-  color: red;
+  color: $color-primary;
   display: inline-block;
 }
 
@@ -263,7 +270,7 @@ body {
   display: flex;
   justify-content: center;
   margin-top: 5rem;
-  color: #fff;
+  color: $color-fifthdary;
 }
 
 /* ***************************************** */
@@ -287,7 +294,7 @@ body {
   width: 4.8rem;
   border-radius: 50%;
   margin-right: -1.6rem;
-  border: 3px solid white;
+  border: 3px solid $color-fifthdary;
 }
 
 .delivered-imgs img:last-child {
@@ -298,7 +305,7 @@ body {
   font-weight: 600;
 }
 .delivered-text span {
-  color: red;
+  color: $color-primary;
 }
 
 /* ***************************************** */
@@ -311,7 +318,7 @@ body {
   padding-top: 8rem;
 }
 .specials-description-header span {
-  color: red;
+  color: $color-primary;
 }
 .specials-description-section {
   padding-bottom: 60px;
@@ -350,7 +357,7 @@ body {
   padding-top: 5rem;
 }
 .menu-header span {
-  color: red;
+  color: $color-primary;
 }
 
 .menu-section {
@@ -384,8 +391,11 @@ body {
 /* ***************************************** */
 
 .main-patio-description {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url('img/patio-dining-4.jpg');
+  background-image: linear-gradient(
+      rgba($color-thirdary, 0.7),
+      rgba($color-thirdary, 0.7)
+    ),
+    url('../img/patio-dining-2.jpg');
   background-position: right 20% bottom 60%;
   background-repeat: no-repeat;
   width: 100%;
@@ -400,10 +410,10 @@ body {
   padding-top: 4rem;
 }
 .patio-header span {
-  color: red;
+  color: $color-primary;
 }
 .patio-header span:last-child {
-  color: white;
+  color: $color-fifthdary;
 }
 .patio-img img {
   width: 100%;
@@ -412,7 +422,7 @@ body {
   border-radius: 2rem;
 }
 .patio-description p {
-  color: #fff;
+  color: $color-fifthdary;
   font-size: 2rem;
   padding-bottom: 2rem;
 }
@@ -448,15 +458,18 @@ body {
   padding-top: 8rem;
 }
 .carousel-header span {
-  color: red;
+  color: $color-primary;
 }
 
 /* ***************************************** */
 /*              Form */
 /* ***************************************** */
 .form {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url('img/patio-dining-3.jpg');
+  background-image: linear-gradient(
+      rgba($color-thirdary, 0.7),
+      rgba($color-thirdary, 0.7)
+    ),
+    url('../img/patio-dining-4.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -470,7 +483,7 @@ body {
   font-size: 3rem;
   margin-left: 20rem;
   padding-top: 4rem;
-  color: #fff;
+  color: $color-fifthdary;
 }
 
 .email-box {
@@ -480,21 +493,21 @@ body {
   transform: translate(-50%, -50%);
 }
 .email-box span {
-  color: red;
+  color: $color-primary;
 }
 .form .email-box {
   width: 400px;
   padding: 40px;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba($color-thirdary, 0.5);
   box-sizing: border-box;
-  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 15px 25px rgba($color-thirdary, 0.6);
   border-radius: 10px;
 }
 
 .email-box h2 {
   margin: 0 0 30px;
   padding: 0;
-  color: #fff;
+  color: $color-fifthdary;
   text-align: center;
 }
 
@@ -506,10 +519,10 @@ body {
   width: 100%;
   padding: 10px 0;
   font-size: 16px;
-  color: #fff;
+  color: $color-fifthdary;
   margin-bottom: 30px;
   border: none;
-  border-bottom: 1px solid #fff;
+  border-bottom: 1px solid $color-fifthdary;
   outline: none;
   background: transparent;
 }
@@ -519,7 +532,7 @@ body {
   left: 0;
   padding: 10px 0;
   font-size: 16px;
-  color: #fff;
+  color: $color-fifthdary;
   pointer-events: none;
   transition: 0.5s;
 }
@@ -528,7 +541,7 @@ body {
 .email-box .user-box input:valid ~ label {
   top: -20px;
   left: 0;
-  color: #dcf403;
+  color: $color-secondary;
   font-size: 12px;
 }
 .form-group textarea {
@@ -539,7 +552,7 @@ body {
   position: relative;
   display: inline-block;
   padding: 10px 20px;
-  color: goldenrod;
+  color: $color-fourthdary;
   font-size: 16px;
   text-decoration: none;
   text-transform: uppercase;
@@ -552,11 +565,11 @@ body {
 }
 
 .submit-button:hover {
-  background: goldenrod;
-  color: #fff;
+  background: $color-fourthdary;
+  color: $color-fifthdary;
   border-radius: 5px;
-  box-shadow: 0 0 5px goldenrod, 0 0 25px goldenrod, 0 0 50px goldenrod,
-    0 0 100px goldenrod;
+  box-shadow: 0 0 5px $color-fourthdary, 0 0 25px $color-fourthdary,
+    0 0 50px $color-fourthdary, 0 0 100px $color-fourthdary;
 }
 
 .submit-button span {
@@ -569,7 +582,7 @@ body {
   left: -100%;
   width: 100%;
   height: 2px;
-  background: linear-gradient(90deg, transparent, goldenrod);
+  background: linear-gradient(90deg, transparent, $color-fourthdary);
   animation: btn-anim1 1s linear infinite;
 }
 
@@ -588,7 +601,7 @@ body {
   right: 0;
   width: 2px;
   height: 100%;
-  background: linear-gradient(180deg, transparent, goldenrod);
+  background: linear-gradient(180deg, transparent, $color-fourthdary);
   animation: btn-anim2 1s linear infinite;
   animation-delay: 0.25s;
 }
@@ -608,7 +621,7 @@ body {
   right: -100%;
   width: 100%;
   height: 2px;
-  background: linear-gradient(270deg, transparent, goldenrod);
+  background: linear-gradient(270deg, transparent, $color-fourthdary);
   animation: btn-anim3 1s linear infinite;
   animation-delay: 0.5s;
 }
@@ -628,7 +641,7 @@ body {
   left: 0;
   width: 2px;
   height: 100%;
-  background: linear-gradient(360deg, transparent, goldenrod);
+  background: linear-gradient(360deg, transparent, $color-fourthdary);
   animation: btn-anim4 1s linear infinite;
   animation-delay: 0.75s;
 }
@@ -646,7 +659,7 @@ body {
 /*              contact-us */
 /* ***************************************** */
 .contact-us-section {
-  background-color: #ffffec;
+  background-color: $color-fifthdary;
 }
 .contact-us-header {
   text-align: center;
@@ -654,7 +667,7 @@ body {
   padding-top: 5rem;
 }
 .contact-us-header span {
-  color: red;
+  color: $color-primary;
 }
 .contact-us {
   height: 40rem;
@@ -686,7 +699,7 @@ body {
 /*             footer */
 /* ***************************************** */
 footer {
-  background-color: goldenrod;
+  background-color: $color-fourthdary;
   padding: 15px 0 15px 0;
 }
 .footer-paragraph {
@@ -701,7 +714,10 @@ footer {
   font-family: 'Permanent Marker', cursive;
 }
 .about-us-section {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+  background-image: linear-gradient(
+      rgba($color-thirdary, 0.7),
+      rgba($color-thirdary, 0.7)
+    ),
     url('img/patio-dining-5.png');
   background-repeat: no-repeat;
   background-position: center;
@@ -715,10 +731,10 @@ footer {
   padding-bottom: 4rem;
 }
 .about-us-header span {
-  color: red;
+  color: $color-primary;
 }
 .about-us-header span:last-child {
-  color: #fff;
+  color: $color-fifthdary;
 }
 .about-us-img img {
   height: 45rem;
@@ -728,7 +744,7 @@ footer {
 .about-us-paragraph p {
   font-size: 2rem;
   padding-bottom: 3rem;
-  color: #fff;
+  color: $color-fifthdary;
 }
 .about-us-paragraph img {
   height: auto;
@@ -736,7 +752,7 @@ footer {
   border-radius: 0.7rem;
 }
 .about-us-paragraph span {
-  color: red;
+  color: $color-primary;
 }
 .about-us-back-homescreen-btn {
   margin-top: 5rem;
