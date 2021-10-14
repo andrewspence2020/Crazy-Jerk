@@ -36,86 +36,85 @@
     <!-- My SASS style sheet "Made sure Path was correct'-->
     <link rel="stylesheet" href="css/style.css" />
   </head>
+
   <!-- Body -->
   <body>
     <!-- NAVIGATION BAR -->
-    <div class="main-hero">
+    <section class="main-hero">
       <nav class="main-nav">
-        <ul class="main-nav-list container">
+        <ul class="main__nav-list container">
           <li>
             <a href="#">
               <img
-                class="logo"
+                class="main__nav_logo"
                 src="img/Crazy-Jerk-Logo.png"
                 alt="Crazy Jerk Logo"
             /></a>
           </li>
           <li>
-            <a class="main-nav-link main-nav-link-1" href="about-us.html"
-              >About Us</a
-            >
+            <a class="main__nav-link" href="about-us.html">About Us</a>
           </li>
           <li>
-            <a class="main-nav-link main-nav-link-2" href="#">Order Now</a>
+            <a class="main__nav-link" href="#">Order Now</a>
           </li>
           <li>
-            <a class="main-nav-link main-nav-link-3" href="#contact-us-link"
-              >Contact Us</a
-            >
+            <a class="main__nav-link" href="#contact-us-link">Contact Us</a>
           </li>
           <li>
-            <a class="main-nav-link main-nav-link-5" href="#menu-link">Menu</a>
+            <a class="main__nav-link" href="#menu-link">Menu</a>
           </li>
           <li>
-            <a class="main-nav-link main-nav-link-4 nav-cta" href="#"
-              >Catering</a
-            >
+            <a class="main__nav-link nav-cta" href="#">Catering</a>
           </li>
         </ul>
       </nav>
+
       <!--Main Header -->
-      <div class="main-hero-container">
-        <div class="main-hero-img">
-          <img src="img/Jamaican-jerk-chicken.png" alt="jamaican dish" />
+      <div class="main__hero-container">
+        <div class="main__hero-img">
+          <img
+            src="img/Jamaican-jerk-chicken.png"
+            alt="jamaican jerk chicken dish"
+          />
         </div>
-        <div class="main-hero-text">
-          <h3 class="main-hero-description"><span>Crazy</span> Jerk</h3>
-          <p class="sub-hero-description">Good food indeed at record speed</p>
+        <div class="main__hero-text">
+          <h3 class="main__hero-description"><span>Crazy</span> Jerk</h3>
+          <p class="sub__hero-description">Good food indeed at record speed</p>
         </div>
       </div>
-      <div class="main-hero-btn-container">
+      <div class="main__hero-btn-container">
         <a href="#specials-link" class="btn btn--full">Let's Eat</a>
         <a href="#learn-more-link" class="btn btn--outline"
           >Learn More &darr;</a
         >
       </div>
-    </div>
+    </section>
 
-    <!-- Secondary header-->
-    <section id="learn-more-link" class="section-hero">
-      <div class="hero">
-        <div class="hero-text-box">
-          <h2 class="heading-primary">
+    <!-- Info header-->
+    <section class="section-info" id="learn-more-link">
+      <div class="info__section">
+        <div class="info__text-box">
+          <h2 class="info__heading-primary">
             You <strong>LOVE</strong> jerk chicken? <br />
             You will definitely love it <strong>CRAZY</strong>!!
           </h2>
-          <p class="hero-description">
+          <p class="info__description">
             <span>CRAZY</span> nice jamaican food right at your door In
             <span>CRAZY</span> record time. We slso have a elegant dining room
             that will make you feel like you are eating in a caribean paradise.
           </p>
         </div>
 
-        <div class="hero-img-box">
+        <div class="info__img-box">
           <img
             src="img/hero-image.png"
-            class="hero-img"
+            class="info-img"
             alt="jamaican man eating good food"
           />
         </div>
       </div>
-      <div class="delivered-meals">
-        <div class="delivered-imgs">
+      <div class="info__delivered-meals">
+        <div class="info__delivered-imgs">
           <img src="img/customer-1.jpg" alt="customer photo" />
           <img src="img/customer-2.jpg" alt="customer photo" />
           <img src="img/customer-3.jpg" alt="customer photo" />
@@ -123,15 +122,15 @@
           <img src="img/customer-5.jpg" alt="customer photo" />
           <img src="img/customer-6.jpg" alt="customer photo" />
         </div>
-        <p class="delivered-text">
+        <p class="info__delivered-text">
           <span>1 million+</span> meals delivered last year!
         </p>
       </div>
     </section>
+
     <!-- Specials Header -->
-    <section class="specials-description-section">
-      <div class="specials-description">
-        <h2 id="specials-link" class="specials-description-header">
+    <section class="specials">
+        <h2 id="specials-link" class="specials__description-header">
           Our <span>Crazy</span> Specials
         </h2>
       </div>
@@ -139,42 +138,42 @@
       <!-- Crazy Jerk Specials-->
       <div
         id="specials-link"
-        class="section-specials container grid grid--3-cols"
+        class="specials__section container grid grid--3-cols"
       >
         <!-- Special 1 -->
-        <div class="specials-1">
+        <div class="specials__1">
           <img src="img/Jamaican-jerk-chicken.png" alt="" />
-          <div class="specials-description">
-            <h2><i class="fas fa-utensils"></i> Jerk Chicken</h2>
-            <div class="specials-paragraph">
-              Really Delicious Jerk Chicken that is juicy to the bone with the
-              finest marinade.
+          <div class="specials__description">
+            <p><i class="fas fa-utensils"></i> Jerk Chicken</p>
+            <div class="specials__paragraph">
+              <p>Really Delicious Jerk Chicken that is juicy to the bone with the
+                finest marinade.</p>       
             </div>
           </div>
         </div>
         <!-- Specail 2 -->
-        <div class="specials-2">
+        <div class="specials__2">
           <img src="img/jamaican-oxtail-stew.jpeg" alt="" />
-          <div class="specials-description">
-            <h2><i class="fas fa-drumstick-bite"></i> Oxtail Stew</h2>
-            <div class="specials-paragraph">
-              Greatly made oxtail Stew that will blow your mind.
+          <div class="specials__description">
+            <p><i class="fas fa-drumstick-bite"></i> Oxtail Stew</p>
+            <div class="specials__paragraph">
+              <p>Greatly made oxtail Stew that will blow your mind.</p>
             </div>
-            <div class="specials-btn">
+            <div class="specials__btn">
               <a href="#" class="btn btn--full"> Order Now </a>
             </div>
           </div>
         </div>
         <!-- Special 3 -->
-        <div class="specials-3">
+        <div class="specials__3">
           <img src="img/Jerk-and-curry-chicken.png" alt="" />
-          <div class="specials-description">
-            <h2>
+          <div class="specials__description">
+            <p>
               <i class="fas fa-pepper-hot"></i> Jerk Chicken on Curry Rice
-            </h2>
-            <div class="specials-paragraph">
-              Traditional Curry Jerk Chicken that’s tastes so good your going to
-              want to have seconds .
+            </p>
+            <div class="specials__paragraph">
+              <p>Traditional Curry Jerk Chicken that’s tastes so good your going to
+                want to have seconds.</p>
             </div>
           </div>
         </div>
@@ -182,16 +181,16 @@
     </section>
 
     <!-- Menu -->
-    <section id="menu-link" class="main-section-menu container">
-      <div class="menu-header">
+    <section id="menu-link" class="menu-section container">
+      <div class="menu__header">
         <h2>Our <span>Crazy</span> Menu</h2>
       </div>
-      <div class="menu-section container grid grid--2-cols">
-        <div class="main-menu-img">
+      <div class="menu__section container grid grid--2-cols">
+        <div class="menu__img">
           <img src="img/jamaican-oxtail-stew.jpeg" alt="" />
         </div>
-        <div class="menu-description">
-          <div class="menu-paragraph">
+        <div class="menu__description">
+          <div class="menu__paragraph">
             <p>
               We serve a variety of 'Carribean style rice' dishes like fragrant
               Jamaican curries, aromatic spicy rice and peas and colourful,
@@ -199,11 +198,11 @@
               fried dumpling for dipping.
             </p>
           </div>
-          <div class="menu-display-button trigger_popup_fricc">
+          <div class="menu__display-button trigger_popup_fricc">
             <a href="#" class="btn btn--full">Check Out the Menu</a>
           </div>
 
-          <div class="secondary-menu-img">
+          <div class="menu__secondary-img">
             <img src="img/Jerk-Chicken-Wings.png" alt="" />
           </div>
         </div>
@@ -212,17 +211,18 @@
     </section>
 
     <!-- Patio Description -->
-    <section class="main-patio-description container">
+    <section class="patio container">
       <!-- patio header -->
-      <div class="patio-header">
+      <div class="patio__header">
         <h2><span>Crazy</span><span> Outdoor Space</span></h2>
       </div>
-      <div class="patio-description grid grid--2-cols">
+
+      <div class="grid grid--2-cols">
         <!-- patio image -->
-        <div class="patio-img">
+        <div class="patio__img">
           <img src="img/people-on-a-patio.jpg" alt="people on patio" />
         </div>
-        <div class="patio-description">
+        <div class="patio__description">
           <!-- patio pargraph -->
           <p>
             Our patio runs on a first come, first served basis only. Once you
@@ -231,7 +231,7 @@
             added to a digital waiting list and when a table becomes available,
             we will give you a call or a text.
           </p>
-          <div class="patio-button">
+          <div class="patio__button">
             <!-- patio button -->
             <a href="#" class="btn btn--full">Reserve Seat</a>
           </div>
@@ -242,7 +242,7 @@
     <!-- Carousel -->
 
     <section class="carousel">
-      <div class="carousel-header">
+      <div class="carousel__header">
         <h2>Some of the <span>Crazy</span> meals were serving</h2>
       </div>
 
@@ -279,29 +279,28 @@
 
     <!-- Form -->
     <section class="form">
-      <div class="form-header">
-        <h2>
+        <h2 class="form__h2--modifier">
           Want to reserve a seat?, Send us a quick Email an we will get back to
           you.
         </h2>
-      </div>
-      <div class="form-fillout">
-        <div class="email-box">
-          <h2>email <span>Crazy</span> Jerk</h2>
+  
+      <div class="email__fillout">
+        <div class="email__box">
+          <h2 class="email__header--modifier">email <span>Crazy</span> Jerk</h2>
           <form
             target="_blank"
             action="https://formsubmit.co/andrew.spence2010@live.com"
             method="POST"
           >
-            <div class="user-box">
+            <div class="user__box">
               <input type="text" name="name" required />
               <label>Name</label>
             </div>
-            <div class="user-box">
+            <div class="user__box">
               <input type="email" name="email" required />
               <label>Email</label>
             </div>
-            <div class="form-group">
+            <div class="form__group">
               <textarea
                 placeholder="Your Message"
                 class="form-control"
@@ -310,7 +309,7 @@
                 required
               ></textarea>
             </div>
-            <button class="submit-button" type="submit">
+            <button class="submit__button" type="submit">
               <span></span>
               <span></span>
               <span></span>
@@ -323,10 +322,10 @@
     </section>
     <!-- Contact Us -->
 
-    <section id="contact-us-link" class="contact-us-section">
-      <h2 class="contact-us-header"><span>Hungry?</span> Contact us</h2>
-      <div class="contact-us grid grid--2-cols">
-        <div class="contact-us-address">
+    <section class="contact-us-section" id="contact-us-link" >
+      <h2 class="contact__us-header"><span>Hungry?</span> Contact us</h2>
+      <div class="contact__us grid grid--2-cols">
+        <div class="contact__us-address">
           <h2><i class="fas fa-shoe-prints"></i> Address:</h2>
           <ul>
             <li>1232 Profit Street, Toronto ON</li>
@@ -335,7 +334,7 @@
           </ul>
         </div>
         <!-- Working Hours -->
-        <div class="working-hours">
+        <div class="working__hours">
           <h2><i class="fas fa-brain"></i> Hours of Operation:</h2>
           <ul>
             <li>Monday to Friday | 1130am - Late</li>
@@ -346,7 +345,7 @@
       </div>
     </section>
     <footer class="footer">
-      <div class="footer-paragraph">
+      <div class="footer__paragraph">
         Crazy Jerk 2021. All rights reserved. Created by Andrew Spence
       </div>
     </footer>
