@@ -60,25 +60,29 @@ h2 {
 }
 
 // buttons
+@mixin primary-button-colors {
+  color: $color-fifthdary;
+  background-color: $color-primary;
+}
+
 .btn:link,
 .btn:visited {
   display: inline-block;
-  background-color: $color-primary;
   font-size: 2rem;
   text-decoration: none;
-  color: $color-fifthdary;
+  @include primary-button-colors;
   padding: 1.6rem 2.6rem;
   border-radius: 12px;
-
   transition: all 0.6s;
 }
+
 .btn--outline {
   margin-left: 1rem;
 }
+
 .btn--full:link,
 .btn--full:visited {
-  background-color: $color-primary;
-  color: $color-fifthdary;
+  @include primary-button-colors;
 }
 
 .btn--full:hover,
