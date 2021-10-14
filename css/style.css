@@ -79,18 +79,18 @@ h2 {
 /* ***************************************** */
 /* Navigation */
 /* ***************************************** */
-.main__nav_logo {
-  margin-top: 1rem;
-  background-color: #fcfcfc;
-  height: 8rem;
-  border-radius: 6rem; }
-
 .main__nav-list {
   display: flex;
   justify-content: space-around;
   align-items: center;
   list-style: none;
   cursor: pointer; }
+
+.main__nav_logo {
+  margin-top: 1rem;
+  background-color: #fcfcfc;
+  height: 8rem;
+  border-radius: 6rem; }
 
 .main__nav-link {
   display: inline-block;
@@ -143,7 +143,7 @@ h2 {
 /* ******************************************** */
 /* Main Header */
 /* ******************************************** */
-.main-hero {
+.main {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/main-hero-image.webp");
   background-repeat: no-repeat;
   background-position: center;

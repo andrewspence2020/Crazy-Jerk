@@ -117,20 +117,20 @@ h2 {
 /* ***************************************** */
 /* Navigation */
 /* ***************************************** */
-
+.main {
+  &__nav-list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    cursor: pointer;
+  }
+}
 .main__nav_logo {
   margin-top: 1rem;
   background-color: $color-fifthdary;
   height: 8rem;
   border-radius: 6rem;
-}
-
-.main__nav-list {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  list-style: none;
-  cursor: pointer;
 }
 
 .main__nav-link {
@@ -201,7 +201,7 @@ h2 {
 /* Main Header */
 /* ******************************************** */
 
-.main-hero {
+.main {
   background-image: linear-gradient(
       rgba($color-thirdary, 0.5),
       rgba($color-thirdary, 0.5)
