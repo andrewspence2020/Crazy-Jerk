@@ -1,0 +1,137 @@
+/* ***************************************** */
+/*              Form */
+/* ***************************************** */
+.form {
+  background-image: linear-gradient(
+      rgba($color-thirdary, 0.7),
+      rgba($color-thirdary, 0.7)
+    ),
+    url('../img/patio-dining-4.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 80rem;
+  width: 100%;
+  margin-top: 5rem;
+  position: relative;
+}
+
+.form__h2--modifier {
+  font-size: 3rem;
+  margin-left: 20rem;
+  padding-top: 4rem;
+  color: $color-fifthdary;
+}
+
+.email__header--modifier {
+  font-size: 3rem;
+}
+
+.email__box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.email__box span {
+  color: $color-primary;
+}
+.form .email__box {
+  width: 400px;
+  padding: 40px;
+  background: rgba($color-thirdary, 0.5);
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba($color-thirdary, 0.6);
+  border-radius: 10px;
+}
+
+.email__box h2 {
+  margin: 0 0 30px;
+  padding: 0;
+  color: $color-fifthdary;
+  text-align: center;
+}
+
+.email__box .user__box {
+  position: relative;
+}
+
+.email__box .user__box input {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  color: $color-fifthdary;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid $color-fifthdary;
+  outline: none;
+  background: transparent;
+}
+.email__box .user__box label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px 0;
+  font-size: 16px;
+  color: $color-fifthdary;
+  pointer-events: none;
+  transition: 0.5s;
+}
+
+.email__box .user__box input:focus ~ label,
+.email__box .user__box input:valid ~ label {
+  top: -20px;
+  left: 0;
+  color: $color-secondary;
+  font-size: 12px;
+}
+.form__group textarea {
+  width: 320px;
+}
+
+.submit__button {
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  color: $color-fourthdary;
+  font-size: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: 0.5s;
+  margin-top: 40px;
+  letter-spacing: 4px;
+  background-color: transparent;
+  font-family: 'Permanent Marker';
+}
+
+.submit__button:hover {
+  background: $color-fourthdary;
+  color: $color-fifthdary;
+  border-radius: 5px;
+  box-shadow: 0 0 5px $color-fourthdary, 0 0 25px $color-fourthdary,
+    0 0 50px $color-fourthdary, 0 0 100px $color-fourthdary;
+}
+
+.submit__button span {
+  position: absolute;
+  display: block;
+}
+
+.submit__button span:nth-child(1) {
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, $color-fourthdary);
+  animation: btn-anim1 1s linear infinite;
+}
+.submit__button span:nth-child(4) {
+  bottom: -100%;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(360deg, transparent, $color-fourthdary);
+  animation: btn-anim4 1s linear infinite;
+  animation-delay: 0.75s;
+}

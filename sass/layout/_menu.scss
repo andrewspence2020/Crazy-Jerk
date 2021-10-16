@@ -1,0 +1,36 @@
+/* ***************************************** */
+/* Menu Description */
+/* ***************************************** */
+
+.menu {
+  margin-bottom: 8rem;
+  &__header {
+    font-size: 4rem;
+    text-align: center;
+    margin-bottom: 4rem;
+    padding-top: 5rem;
+    span {
+      color: $color-primary;
+    }
+  }
+  &__img {
+    margin-top: 10rem;
+  }
+  &__img img,
+  &__secondary-img img {
+    width: 100%;
+    height: auto;
+    border-radius: 2px;
+  }
+  &__food-paragraph {
+    font-size: 2rem;
+    margin-top: 6rem;
+  }
+  &__display-button a {
+    margin-top: 3rem;
+    margin-bottom: 4rem;
+  }
+  &__secondary-img img {
+    margin-bottom: 10rem;
+  }
+}

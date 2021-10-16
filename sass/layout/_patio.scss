@@ -1,0 +1,44 @@
+/* ***************************************** */
+/* Patio Description */
+/* ***************************************** */
+
+.patio {
+  background-image: linear-gradient(
+      rgba($color-thirdary, 0.7),
+      rgba($color-thirdary, 0.7)
+    ),
+    url('../img/patio-dining-2.jpg');
+  background-position: right 20% bottom 60%;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 80rem;
+  background-size: cover;
+  border-radius: 2rem;
+
+  &__header {
+    font-size: 4rem;
+    text-align: center;
+    margin-bottom: 7.5rem;
+    padding-top: 4rem;
+    span {
+      color: $color-primary;
+    }
+    span:last-child {
+      color: $color-fifthdary;
+    }
+  }
+  &__display-img img {
+    width: 100%;
+    height: auto;
+    margin-left: 2rem;
+    border-radius: 2rem;
+  }
+  &__display-img-description p {
+    color: $color-fifthdary;
+    font-size: 2rem;
+    padding-bottom: 2rem;
+  }
+  &__reserve-button {
+    margin-top: 4rem;
+  }
+}

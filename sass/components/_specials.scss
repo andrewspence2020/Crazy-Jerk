@@ -1,0 +1,35 @@
+/* ***************************************** */
+/* Specials Description */
+/* ***************************************** */
+
+.specials {
+  padding-bottom: 60px;
+  &__description-header {
+    text-align: center;
+    margin-bottom: 7.5rem;
+    padding-top: 8rem;
+  }
+  span {
+    color: $color-primary;
+  }
+  &__section {
+    max-width: 130rem;
+    img {
+      height: auto;
+      max-width: 100%;
+      border-radius: 2px;
+      margin-bottom: 50px;
+    }
+  }
+  &__description p {
+    font-size: 2rem;
+  }
+  &__food-paragraph p {
+    font-size: 1.5rem;
+    list-style: none;
+  }
+  &__btn {
+    margin-top: 3rem;
+    margin-left: 10rem;
+  }
+}

@@ -1,0 +1,7 @@
+ Compile SASS
+put in terminal or CMD
+-- npm run compile:sass --
+
+
+/*-------------linear gradient */
+/* linear-gradient(rgba($color-thirdary, 0.5), rgba($color-thirdary, 0.5) 
