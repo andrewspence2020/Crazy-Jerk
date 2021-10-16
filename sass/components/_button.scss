@@ -1,0 +1,53 @@
+@mixin primary-button-colors {
+  color: $color-fifthdary;
+  background-color: $color-primary;
+}
+
+.btn {
+  &:link,
+  &hover {
+    @include primary-button-colors;
+    padding: 1.6rem 2.6rem;
+    border-radius: 12px;
+    transition: all 0.6s;
+    display: inline-block;
+    font-size: 2rem;
+    text-decoration: none;
+  }
+  &--outline {
+    margin-left: 1rem;
+  }
+  &--full {
+    &:link,
+    &:visited {
+      @include primary-button-colors;
+    }
+  }
+  &--full {
+    &:hover,
+    &:active {
+      background-color: $color-secondary;
+      color: $color-thirdary;
+    }
+  }
+  &--outline {
+    &:link,
+    &:visited {
+      background-color: $color-fifthdary;
+      color: $color-thirdary;
+    }
+  }
+  &--outline {
+    &:hover,
+    &:active {
+      background-color: $color-secondary;
+      /* border: 3px solid $color-fifthdary; */
+      /* Trick to add border inside */
+      /* box-shadow: 0 0 0 3px; */
+    }
+  }
+}
+
+.margin-right-sm {
+  margin-right: 7.6rem !important;
+}

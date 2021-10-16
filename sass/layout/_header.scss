@@ -1,0 +1,54 @@
+
+/* ******************************************** */
+/* Main Header */
+/* ******************************************** */
+.main {
+  background-image: linear-gradient(
+      rgba($color-thirdary, 0.5),
+      rgba($color-thirdary, 0.5)
+    ),
+    url('../img/main-hero-image.webp');
+  background-repeat: no-repeat;
+  background-position: center;
+  height: auto;
+  width: 100%;
+  background-size: cover;
+  padding-bottom: 155px;
+  &__hero-img img {
+    height: 40rem;
+    max-width: 100%;
+    margin-top: 3.2rem;
+    border-radius: 2rem;
+  }
+  &__hero-text {
+    margin-right: 10rem;
+    font-size: 3.5rem;
+  }
+  &__hero-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: $color-fifthdary;
+  }
+  &__sub-hero-description {
+    display: flex;
+    font-size: 40px;
+    line-height: 1px;
+    letter-spacing: 0.3rem;
+    color: $color-fifthdary;
+  }
+  &__hero-description {
+    font-size: 60px;
+    letter-spacing: 3px;
+  }
+  &__hero-description span {
+    color: $color-primary;
+    display: inline-block;
+  }
+  &__hero-btn-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem;
+    color: $color-fifthdary;
+  }
+}

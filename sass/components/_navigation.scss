@@ -1,0 +1,70 @@
+/* ***************************************** */
+/* Navigation */
+/* ***************************************** */
+.main {
+  &__nav-list {
+    display: flex;
+    justify-content: space-around;
+    align-items: ce0nter;
+    list-style: none;
+    cursor: pointer;
+  }
+  &__nav_logo {
+    margin-top: 1rem;
+    background-color: #fcfcfc;
+    height: 8rem;
+    border-radius: 6rem;
+  }
+  &__nav-link {
+    display: inline-block;
+    position: relative;
+    color: #daa520;
+  }
+  &__nav-link:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #ff0025;
+    transform-origin: center;
+    transition: transform 0.25s ease-out;
+  }
+  &__nav-link:link,
+  :visited {
+    text-decoration: none;
+    color: #fcfcfc;
+    font-weight: 800;
+    font-size: 2.5rem;
+    transition: all 0.3s;
+    display: inline-block;
+  }
+  &__nav-link:hover::after {
+    transform: scaleX(1);
+    transform-origin: center;
+  }
+  &__nav-link:hover,
+  :after {
+    color: #ffd700;
+  }
+  &__nav-catering-btn {
+    text-decoration: none;
+  }
+  &__nav-catering-btn.nav--cta:link,
+  :visited {
+    border-radius: 0.9rem;
+    padding: 1.6rem 2.4rem;
+    color: #fcfcfc;
+    background-color: #4a7023;
+  }
+  &__nav-catering-btn.nav--cta:hover,
+  :active {
+    background-color: #daa520;
+  }
+  &__nav-catering-btn.nav--cta:after {
+    top: 0.5rem;
+    bottom: 0.5rem;
+  }
+}
