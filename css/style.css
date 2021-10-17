@@ -11,7 +11,8 @@ html {
   font-size: 62.5%; }
 
 body {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  border: 30px solid white; }
 
 h2 {
   font-size: 6rem; }
@@ -147,7 +148,8 @@ body {
   height: auto;
   width: 100%;
   background-size: cover;
-  padding-bottom: 155px; }
+  padding-bottom: 155px;
+  clip-path: polygon(0 0, 100% 0, 100% 675px, 0 100%); }
   .main__hero-img img {
     height: 40rem;
     max-width: 100%;
@@ -575,7 +577,7 @@ footer {
   font-family: 'Permanent Marker', cursive; }
 
 .about-us__section {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/patio-dining-4.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/patio-dining-3.jpg");
   background-repeat: no-repeat;
   background-position: center;
   height: 100vh;
@@ -596,14 +598,17 @@ footer {
 .about-us__img img {
   height: 45rem;
   max-width: 100%;
-  border-radius: 0.7rem; }
+  border-radius: 0.7rem;
+  margin-top: 15rem; }
 
 .about-us__paragraph p {
   font-size: 2rem;
   padding-bottom: 3rem;
-  color: #fcfcfc; }
+  color: #fcfcfc;
+  margin-top: 5rem; }
 
 .about-us__paragraph img {
+  margin-top: 30rem;
   height: auto;
   max-width: 100%;
   border-radius: 0.7rem; }

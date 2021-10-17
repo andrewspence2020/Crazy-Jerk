@@ -1,51 +1,56 @@
 /* ***************************************** */
 /*             About-us */
 /* ***************************************** */
-.about-us__body {
-  font-family: 'Permanent Marker', cursive;
-}
-.about-us__section {
-  background-image: linear-gradient(
-      rgba($color-thirdary, 0.7),
-      rgba($color-thirdary, 0.7)
-    ),
-    url('../img/patio-dining-4.jpg');
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 100vh;
-  width: 100%;
-  background-size: cover;
-}
-.about-us__header--modifier {
-  font-size: 6rem;
-  text-align: center;
-  padding-bottom: 4rem;
-}
-.about-us__header--modifier span {
-  color: $color-primary;
-}
-.about-us__header--modifier span:last-child {
-  color: $color-fifthdary;
-}
-.about-us__img img {
-  height: 45rem;
-  max-width: 100%;
-  border-radius: 0.7rem;
-}
-.about-us__paragraph p {
-  font-size: 2rem;
-  padding-bottom: 3rem;
-  color: $color-fifthdary;
-}
-.about-us__paragraph img {
-  height: auto;
-  max-width: 100%;
-  border-radius: 0.7rem;
-}
-.about-us__paragraph span {
-  color: $color-primary;
-}
-.about-us__back-homescreen-btn {
-  margin-top: 5rem;
-  text-align: center;
+.about-us {
+  &__body {
+    font-family: 'Permanent Marker', cursive;
+  }
+  &__section {
+    background-image: linear-gradient(
+        rgba($color-thirdary, 0.7),
+        rgba($color-thirdary, 0.7)
+      ),
+      url('../img/patio-dining-3.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+  }
+  &__header--modifier {
+    font-size: 6rem;
+    text-align: center;
+    padding-bottom: 4rem;
+  }
+  &__header--modifier span {
+    color: $color-primary;
+  }
+  &__header--modifier span:last-child {
+    color: $color-fifthdary;
+  }
+  &__img img {
+    height: 45rem;
+    max-width: 100%;
+    border-radius: 0.7rem;
+    margin-top: 15rem;
+  }
+  &__paragraph p {
+    font-size: 2rem;
+    padding-bottom: 3rem;
+    color: $color-fifthdary;
+    margin-top: 5rem;
+  }
+  &__paragraph img {
+    margin-top: 30rem;
+    height: auto;
+    max-width: 100%;
+    border-radius: 0.7rem;
+  }
+  &__paragraph span {
+    color: $color-primary;
+  }
+  &__back-homescreen-btn {
+    margin-top: 5rem;
+    text-align: center;
+  }
 }
