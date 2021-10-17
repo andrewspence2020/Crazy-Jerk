@@ -14,7 +14,8 @@ html {
 }
 
 body {
-  font-family: 'Permanent Marker', cursive;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 h2 {
@@ -151,6 +152,12 @@ h2 {
   100% {
     bottom: 100%;
   }
+}
+
+body {
+  font-family: 'Permanent Marker', cursive;
+  font-weight: 400;
+  line-height: 1.7;
 }
 
 /******************************************/
@@ -446,6 +453,19 @@ h2 {
 }
 
 /* ***************************************** */
+/*             footer */
+/* ***************************************** */
+footer {
+  background-color: #daa520;
+  padding: 15px 0 15px 0;
+}
+
+.footer__paragraph {
+  text-align: center;
+  font-size: 2rem;
+}
+
+/* ***************************************** */
 /* Navigation */
 /* ***************************************** */
 .main__nav-list {
@@ -454,9 +474,9 @@ h2 {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  -webkit-box-align: ce0nter;
-      -ms-flex-align: ce0nter;
-          align-items: ce0nter;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   list-style: none;
   cursor: pointer;
 }
@@ -496,11 +516,11 @@ h2 {
 .main :visited {
   text-decoration: none;
   color: #fcfcfc;
-  font-weight: 800;
   font-size: 2.5rem;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   display: inline-block;
+  margin-top: 5rem;
 }
 
 .main__nav-link:hover::after {
@@ -510,8 +530,7 @@ h2 {
           transform-origin: center;
 }
 
-.main__nav-link:hover,
-.main :after {
+.main__nav-link:hover, .main:after {
   color: #ffd700;
 }
 

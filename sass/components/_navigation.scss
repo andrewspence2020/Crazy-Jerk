@@ -5,7 +5,7 @@
   &__nav-list {
     display: flex;
     justify-content: space-around;
-    align-items: ce0nter;
+    align-items: center;
     list-style: none;
     cursor: pointer;
   }
@@ -32,21 +32,22 @@
     transform-origin: center;
     transition: transform 0.25s ease-out;
   }
+
   &__nav-link:link,
   :visited {
     text-decoration: none;
     color: #fcfcfc;
-    font-weight: 800;
     font-size: 2.5rem;
     transition: all 0.3s;
     display: inline-block;
+    margin-top: 5rem;
   }
   &__nav-link:hover::after {
     transform: scaleX(1);
     transform-origin: center;
   }
   &__nav-link:hover,
-  :after {
+  &:after {
     color: #ffd700;
   }
   &__nav-catering-btn {

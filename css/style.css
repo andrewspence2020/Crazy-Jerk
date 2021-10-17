@@ -11,7 +11,7 @@ html {
   font-size: 62.5%; }
 
 body {
-  font-family: 'Permanent Marker', cursive; }
+  box-sizing: border-box; }
 
 h2 {
   font-size: 6rem; }
@@ -78,6 +78,11 @@ h2 {
   50%,
   100% {
     bottom: 100%; } }
+
+body {
+  font-family: 'Permanent Marker', cursive;
+  font-weight: 400;
+  line-height: 1.7; }
 
 /******************************************/
 /* Info section */
@@ -275,12 +280,23 @@ h2 {
   list-style: none; }
 
 /* ***************************************** */
+/*             footer */
+/* ***************************************** */
+footer {
+  background-color: #daa520;
+  padding: 15px 0 15px 0; }
+
+.footer__paragraph {
+  text-align: center;
+  font-size: 2rem; }
+
+/* ***************************************** */
 /* Navigation */
 /* ***************************************** */
 .main__nav-list {
   display: flex;
   justify-content: space-around;
-  align-items: ce0nter;
+  align-items: center;
   list-style: none;
   cursor: pointer; }
 
@@ -311,17 +327,16 @@ h2 {
 .main :visited {
   text-decoration: none;
   color: #fcfcfc;
-  font-weight: 800;
   font-size: 2.5rem;
   transition: all 0.3s;
-  display: inline-block; }
+  display: inline-block;
+  margin-top: 5rem; }
 
 .main__nav-link:hover::after {
   transform: scaleX(1);
   transform-origin: center; }
 
-.main__nav-link:hover,
-.main :after {
+.main__nav-link:hover, .main:after {
   color: #ffd700; }
 
 .main__nav-catering-btn {
