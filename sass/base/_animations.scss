@@ -1,3 +1,4 @@
+// Form button animation
 @keyframes btn-anim1 {
   0% {
     left: -100%;
@@ -55,5 +56,28 @@
   50%,
   100% {
     bottom: 100%;
+  }
+}
+
+/* Pop-up animations */
+@-webkit-keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
   }
 }

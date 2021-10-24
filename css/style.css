@@ -80,6 +80,23 @@ h2 {
   100% {
     bottom: 100%; } }
 
+/* Pop-up animations */
+@-webkit-keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0; }
+  to {
+    top: 0;
+    opacity: 1; } }
+
+@keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0; }
+  to {
+    top: 0;
+    opacity: 1; } }
+
 body {
   font-family: 'Permanent Marker', cursive;
   font-weight: 400;
@@ -569,6 +586,67 @@ footer {
   background: linear-gradient(360deg, transparent, #daa520);
   animation: btn-anim4 1s linear infinite;
   animation-delay: 0.75s; }
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  padding-top: 80px;
+  /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: black;
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */
+  /* Modal Content */ }
+  .modal__content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s;
+    border-radius: 1.8rem; }
+
+/* The Close Button */
+.close {
+  color: #ffd700;
+  margin-left: 134rem;
+  font-size: 50px;
+  font-weight: bold; }
+  .close:hover, .close:focus {
+    color: #ff0025;
+    text-decoration: none;
+    cursor: pointer; }
+
+.modal__items-header {
+  text-align: center; }
+  .modal__items-header.modal__items-header h2 span {
+    color: #ff0025; }
+
+.modal__items {
+  font-size: 1.8rem;
+  list-style: none;
+  margin-left: 2rem;
+  padding: 15px 15px 15px 15px; }
+  .modal__items p span {
+    margin-left: 80rem; }
 
 /* ***************************************** */
 /*             About-us */
