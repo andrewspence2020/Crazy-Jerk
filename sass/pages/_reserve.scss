@@ -1,0 +1,31 @@
+/* ***************************************** */
+/* reserve  */
+/* ***************************************** */
+.reserve {
+  background-image: linear-gradient(
+      rgba($color-thirdary, 0.7),
+      rgba($color-thirdary, 0.7)
+    ),
+    url('../img/patio-dining-4.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 130vh;
+  width: 100%;
+  background-size: cover;
+  &__header--modifier {
+    text-align: center;
+    span {
+      color: $color-primary;
+    }
+    :last-child {
+      color: white;
+    }
+  }
+  &__google-calender {
+    text-align: center;
+  }
+  &__back-homescreen-btn {
+    text-align: center;
+    margin-top: 2rem;
+  }
+}

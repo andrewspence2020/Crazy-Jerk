@@ -620,6 +620,20 @@ footer {
   /* box-shadow: 0 0 0 3px; */
 }
 
+/* The Close Button */
+.close {
+  color: #ffd700;
+  margin-left: 134rem;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.close:hover, .close:focus {
+  color: #ff0025;
+  text-decoration: none;
+  cursor: pointer;
+}
+
 .margin-right-sm {
   margin-right: 7.6rem !important;
 }
@@ -719,8 +733,8 @@ footer {
 }
 
 .form__h2--modifier {
-  font-size: 3rem;
-  margin-left: 20rem;
+  font-size: 2.5rem;
+  text-align: center;
   padding-top: 4rem;
   color: #fcfcfc;
 }
@@ -894,20 +908,6 @@ footer {
   border-radius: 1.8rem;
 }
 
-/* The Close Button */
-.close {
-  color: #ffd700;
-  margin-left: 134rem;
-  font-size: 50px;
-  font-weight: bold;
-}
-
-.close:hover, .close:focus {
-  color: #ff0025;
-  text-decoration: none;
-  cursor: pointer;
-}
-
 .modal__items-header {
   text-align: center;
 }
@@ -981,5 +981,39 @@ footer {
 .about-us__back-homescreen-btn {
   margin-top: 5rem;
   text-align: center;
+}
+
+/* ***************************************** */
+/* reserve  */
+/* ***************************************** */
+.reserve {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url("../img/patio-dining-4.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/patio-dining-4.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 130vh;
+  width: 100%;
+  background-size: cover;
+}
+
+.reserve__header--modifier {
+  text-align: center;
+}
+
+.reserve__header--modifier span {
+  color: #ff0025;
+}
+
+.reserve__header--modifier :last-child {
+  color: white;
+}
+
+.reserve__google-calender {
+  text-align: center;
+}
+
+.reserve__back-homescreen-btn {
+  text-align: center;
+  margin-top: 2rem;
 }
 /*# sourceMappingURL=main.css.map */

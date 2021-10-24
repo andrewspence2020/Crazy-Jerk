@@ -47,6 +47,20 @@
     }
   }
 }
+/* The Close Button */
+.close {
+  color: $color-secondary;
+  margin-left: 134rem;
+
+  font-size: 50px;
+  font-weight: bold;
+  &:hover,
+  &:focus {
+    color: $color-primary;
+    text-decoration: none;
+    cursor: pointer;
+  }
+}
 
 .margin-right-sm {
   margin-right: 7.6rem !important;
